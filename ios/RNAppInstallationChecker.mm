@@ -6,7 +6,7 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(isFromAppStore:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+RCT_EXPORT_METHOD(RNAppInstallationChecker:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     NSURL *receiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
     NSString *receiptPath = receiptURL.path;
 

@@ -7,8 +7,8 @@ const LINKING_ERROR =
   '- You are not using Expo Go\n';
 
 export const isFromAppStore: () => Promise<boolean | undefined> =
-  NativeModules.DeviceInfo
-    ? NativeModules.DeviceInfo
+  NativeModules.RNAppInstallationChecker
+    ? NativeModules.RNAppInstallationChecker
     : new Proxy(
         {},
         {
